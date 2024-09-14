@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Verge</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Ensure you have a stylesheet for styling -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, <%= user %></h1>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </div>
+
+        <h2>Featured Movies</h2>
+        <div class="movies">
+            <!-- Example movie entries -->
+            <div class="movie">
+                <img src="https://i.pinimg.com/736x/d4/24/58/d4245806458d4177c8f0ef15d2733522.jpg" alt="Movie 1">
+                <div class="movie-title">Men</div>
+            </div>
+            <div class="movie">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/kurta/n/h/0/l-kurta-new-set-1-traditional-fashion-original-imagmxjutefa6nej.jpeg?q=90&crop=false" alt="Movie 2">
+                <div class="movie-title">Women</div>
+            </div>
+            <div class="movie">
+                <img src="https://c8.alamy.com/comp/2C80TY7/children-fashion-concept-little-boy-in-business-suit-and-girl-in-dress-isolated-on-white-background-2C80TY7.jpg" alt="Movie 3">
+                <div class="movie-title">children</div>
+            </div>
+            <!-- Add more movie entries as needed -->
+        </div>
+    </div>
+</body>
+</html>
